@@ -347,6 +347,10 @@ footer {
     gap: 2rem;
 }
 
+.footer-links[hidden] {
+    display: none;
+}
+
 .footer-links a {
     color: var(--text-primary);
     text-decoration: none;
