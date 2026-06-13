@@ -263,6 +263,62 @@ h1, h2, h3, h4 {
     max-width: 600px;
 }
 
+/* Portfolio Items */
+.portfolio-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.portfolio-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-head h3 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    letter-spacing: -0.02em;
+}
+
+.portfolio-arrow {
+    color: var(--text-secondary);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a.portfolio-item:hover .portfolio-arrow {
+    transform: translate(4px, -4px);
+    color: var(--text-primary);
+}
+
+.portfolio-item p {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-status {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+}
+
 /* Focus Section */
 .large-text {
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
